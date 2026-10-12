@@ -1,0 +1,310 @@
+/* Configuración y reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Header general */
+header {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222222;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-height: 100px;
+    width: auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #c5a059;
+}
+
+.search-box input {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+
+/* Estructura del Main */
+main {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+/* Banner de presentación */
+.hero {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    overflow: hidden; 
+    min-height: 200px;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 30px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 520px;
+}
+
+.hero-image {
+    width: 35%; 
+    height: 100%;
+    align-self: stretch; 
+    display: flex;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+}
+
+
+/* Sección informativa y datos */
+.info-section,
+.curiosities-section {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.info-section h2,
+.curiosities-section h2 {
+    font-family: 'Cinzel', serif;
+    color: #c5a059;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.curiosities-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #cccccc;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.curiosities-section li {
+    margin-bottom: 8px;
+}
+
+.external-link-container {
+    background-color: #1f1f1f;
+    border-left: 3px solid #c5a059;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.external-link-container a {
+    color: #c5a059;
+    font-weight: 600;
+}
+
+.external-link-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* Grilla de productos */
+.products-container h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card,
+.product-item {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* CAJA DE LA IMAGEN AGRANDADA (Alto aumentado y padding reducido) */
+.card-img,
+.product-img-box {
+    width: 100%;
+    height: 180px; /* Cambiado de 130px a 180px para que el reloj tenga más espacio vertical */
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+/* IMAGEN DEL RELOJ (Aprovechamiento máximo del recuadro) */
+.card-img img,
+.product-img-box img {
+    max-width: 95%; /* Cambiado del 80% al 95% para eliminar el espacio vacío lateral */
+    max-height: 95%; /* Cambiado del 80% al 95% para agrandar el reloj sin deformarlo */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-info h3,
+.product-item h3 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.card-info p {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 0.9rem;
+    color: #c5a059;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.btn-detail {
+    display: inline-block;
+    background-color: #c5a059;
+    color: #0d0d0d;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-detail:hover {
+    background-color: #e0b86c;
+}
+
+
+/* Pie de página */
+.site-footer {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    border-top: 1px solid #222222;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-student-data p,
+.footer-info p,
+.footer-info a {
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
