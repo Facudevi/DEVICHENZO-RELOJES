@@ -21,6 +21,8 @@ a {
 }
 
 
+/* INICIO */
+
 /* Header general */
 header {
     width: 100%;
@@ -311,7 +313,7 @@ main {
 
 
 
-/* ----------------------------- */
+/* CATÁLOGO */
 
 /* Navegación secundaria y títulos */
 .breadcrumbs {
@@ -348,16 +350,16 @@ main {
     background-color: #141414;
     border: 1px solid #262626;
     border-radius: 10px;
-    padding: 0; /* Sin padding interno para que la imagen pegue completamente a los bordes */
+    padding: 0; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden; /* Recorta la imagen siguiendo los bordes redondeados */
-    height: 130px; /* Altura uniforme para las tarjetas */
+    overflow: hidden;
+    height: 130px;
 }
 
 .brand-content {
-    width: 50%; /* Ocupa exactamente la mitad izquierda */
+    width: 50%;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -390,12 +392,12 @@ main {
 
 /* Imagen de la marca (Ocupa la mitad derecha completa sin bordes grises) */
 .brand-img {
-    width: 50%; /* Ocupa desde el centro hasta el borde derecho */
-    height: 100%; /* Cubre todo el alto de arriba a abajo */
-    object-fit: cover; /* Rellena toda la mitad de la tarjeta */
+    width: 50%;
+    height: 100%; 
+    object-fit: cover; 
     object-position: center;
-    background-color: #000000; /* Fondo negro puro para unificar con el fondo de los logos */
-    padding: 0; /* Sin espacio interno para evitar bordes o marcos */
+    background-color: #000000; 
+    padding: 0;
 }
 
 /* Modelos destacados en catálogo */
@@ -452,9 +454,7 @@ main {
 
 
 
-/* ==========================================
-   3. PÁGINA NOVEDADES (novedades.html)
-   ========================================== */
+/* NOVEDADES */
 
 /* Banner hero de novedades */
 .hero-news {
@@ -563,4 +563,37 @@ main {
     font-size: 0.75rem;
     color: #c5a059;
     font-weight: 600;
+}
+
+
+/* COLECCIONES */
+
+.collection-hero {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.collection-hero-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.collection-hero-content p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    max-width: 500px;
+}
+
+.collection-hero-image img {
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
 }
