@@ -208,11 +208,11 @@ main {
     position: relative;
 }
 
-/* CAJA DE LA IMAGEN AGRANDADA (Alto aumentado y padding reducido) */
+/* CAJA DE LA IMAGEN AGRANDADA */
 .card-img,
 .product-img-box {
     width: 100%;
-    height: 180px; /* Cambiado de 130px a 180px para que el reloj tenga más espacio vertical */
+    height: 180px;
     background-color: #1f1f1f;
     border-radius: 8px;
     display: flex;
@@ -222,11 +222,11 @@ main {
     padding: 10px;
 }
 
-/* IMAGEN DEL RELOJ (Aprovechamiento máximo del recuadro) */
+/* IMAGEN DEL RELOJ */
 .card-img img,
 .product-img-box img {
-    max-width: 95%; /* Cambiado del 80% al 95% para eliminar el espacio vacío lateral */
-    max-height: 95%; /* Cambiado del 80% al 95% para agrandar el reloj sin deformarlo */
+    max-width: 95%;
+    max-height: 95%;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -307,4 +307,260 @@ main {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+
+
+/* ----------------------------- */
+
+/* Navegación secundaria y títulos */
+.breadcrumbs {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+.breadcrumbs a {
+    color: #888888;
+}
+
+.breadcrumbs a:hover {
+    color: #c5a059;
+}
+
+.breadcrumbs span {
+    color: #c5a059;
+}
+
+.page-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #c5a059;
+}
+
+/* Grilla de marcas */
+.brand-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.brand-card {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 0; /* Sin padding interno para que la imagen pegue completamente a los bordes */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /* Recorta la imagen siguiendo los bordes redondeados */
+    height: 130px; /* Altura uniforme para las tarjetas */
+}
+
+.brand-content {
+    width: 50%; /* Ocupa exactamente la mitad izquierda */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.brand-content h3 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn-brand {
+    display: inline-block;
+    background-color: #c5a059;
+    color: #0d0d0d;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-brand:hover {
+    background-color: #e0b86c;
+}
+
+/* Imagen de la marca (Ocupa la mitad derecha completa sin bordes grises) */
+.brand-img {
+    width: 50%; /* Ocupa desde el centro hasta el borde derecho */
+    height: 100%; /* Cubre todo el alto de arriba a abajo */
+    object-fit: cover; /* Rellena toda la mitad de la tarjeta */
+    object-position: center;
+    background-color: #000000; /* Fondo negro puro para unificar con el fondo de los logos */
+    padding: 0; /* Sin espacio interno para evitar bordes o marcos */
+}
+
+/* Modelos destacados en catálogo */
+.featured-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.product-img-box {
+    width: 100%;
+    height: 180px; /* Altura mayor para mostrar los relojes más grandes */
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+.product-img-box img {
+    max-width: 95%;
+    max-height: 95%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-item h3 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+
+
+/* ==========================================
+   3. PÁGINA NOVEDADES (novedades.html)
+   ========================================== */
+
+/* Banner hero de novedades */
+.hero-news {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-news-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero-news-content p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    max-width: 500px;
+}
+
+.hero-news-image img {
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Grilla de lanzamientos y etiqueta "Nuevo" */
+.latest-section h2,
+.articles-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.latest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.badge-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #c5a059;
+    color: #0d0d0d;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* Noticias y artículos de tendencias */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.news-img-box {
+    width: 90px;
+    height: 80px;
+    background-color: #1f1f1f;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.news-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.news-content h3 {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.news-content p {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+.read-more {
+    font-size: 0.75rem;
+    color: #c5a059;
+    font-weight: 600;
 }
