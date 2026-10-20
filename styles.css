@@ -21,6 +21,8 @@ a {
 }
 
 
+
+
 /* INICIO */
 
 /* Header general */
@@ -313,6 +315,7 @@ main {
 
 
 
+
 /* CATÁLOGO */
 
 /* Navegación secundaria y títulos */
@@ -390,7 +393,7 @@ main {
     background-color: #e0b86c;
 }
 
-/* Imagen de la marca (Ocupa la mitad derecha completa sin bordes grises) */
+/* Imagen de la marca */
 .brand-img {
     width: 50%;
     height: 100%; 
@@ -428,7 +431,7 @@ main {
 
 .product-img-box {
     width: 100%;
-    height: 180px; /* Altura mayor para mostrar los relojes más grandes */
+    height: 180px;
     background-color: #1f1f1f;
     border-radius: 8px;
     display: flex;
@@ -451,6 +454,7 @@ main {
     color: #ffffff;
     margin-bottom: 6px;
 }
+
 
 
 
@@ -566,6 +570,8 @@ main {
 }
 
 
+
+
 /* COLECCIONES */
 
 .collection-hero {
@@ -575,9 +581,9 @@ main {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centra verticalmente el texto y la imagen */
+    align-items: center;
     gap: 30px;
-    min-height: 220px; /* Asegura una altura uniforme en todos los hero */
+    min-height: 220px; 
 }
 
 .collection-hero-content {
@@ -598,14 +604,14 @@ main {
     line-height: 1.5;
 }
 
-/* CONTENEDOR FIJO PARA UNIFICAR TAMAÑO Y CENTRADO */
+/* CONTENEDOR FIJO */
 .collection-hero-image {
-    width: 250px;       /* Ancho fijo idéntico para todos los hero */
-    height: 180px;      /* Alto fijo idéntico para todos los hero */
+    width: 250px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;     /* Evita que el contenedor se deforme si el texto es largo */
+    flex-shrink: 0;
 }
 
 .collection-hero-image img {
@@ -613,6 +619,210 @@ main {
     max-height: 100%;
     width: auto;
     height: auto;
-    object-fit: contain; /* Mantiene la proporción del reloj sin deformar ni cortar */
+    object-fit: contain;
     display: block;
+}
+
+
+
+
+/* PRODUCTO INDIVIDUAL */
+
+.product-page-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #c5a059;
+}
+
+.product-main-view {
+    display: flex;
+    gap: 30px;
+}
+
+/* Galería de imágenes y miniaturas */
+.product-gallery {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main-image-box {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image-box img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.thumbnail-list {
+    display: flex;
+    gap: 10px;
+}
+
+.thumb-item {
+    width: 25%;
+    height: 60px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb-item.active {
+    border-color: #c5a059;
+}
+
+.thumb-item img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Información de compra */
+.product-purchase-info {
+    width: 55%;
+}
+
+.brand-subtitle {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+.product-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.reference-code {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    color: #c5a059;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.product-short-desc {
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Cuadro de especificaciones rápidas */
+.quick-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    margin-bottom: 15px;
+}
+
+.spec-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-label {
+    font-size: 0.65rem;
+    color: #888888;
+}
+
+.spec-value {
+    font-size: 0.75rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.buy-now-form {
+    margin-bottom: 20px;
+}
+
+.btn-add-cart {
+    display: inline-block;
+    background-color: #c5a059;
+    color: #0d0d0d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-add-cart:hover {
+    background-color: #e0b86c;
+}
+
+/* Pestañas de información técnica adicional */
+.product-tabs {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #262626;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.tab-btn {
+    color: #888888;
+}
+
+.tab-btn.active {
+    color: #c5a059;
+    font-weight: 600;
+}
+
+.tab-content h4 {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.specs-table {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 0.7rem;
+}
+
+.spec-name {
+    color: #888888;
+}
+
+.spec-detail {
+    color: #ffffff;
 }
