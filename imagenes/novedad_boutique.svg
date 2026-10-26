@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="360" height="320">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05050a"/>
+      <stop offset="1" stop-color="#1a1a24"/>
+    </linearGradient>
+    <linearGradient id="vidriera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3d9a0"/>
+      <stop offset="1" stop-color="#b8863b"/>
+    </linearGradient>
+    <linearGradient id="oro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0b86c"/>
+      <stop offset="1" stop-color="#a07a35"/>
+    </linearGradient>
+    <radialGradient id="brillo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f3d9a0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f3d9a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo nocturno -->
+  <rect width="360" height="320" fill="url(#cielo)"/>
+  <circle cx="300" cy="40" r="3" fill="#f3d9a0"/>
+  <circle cx="50" cy="30" r="2" fill="#f3d9a0" opacity="0.7"/>
+  <circle cx="120" cy="55" r="1.5" fill="#f3d9a0" opacity="0.6"/>
+  <circle cx="240" cy="25" r="1.5" fill="#f3d9a0" opacity="0.6"/>
+
+  <!-- Fachada -->
+  <rect x="30" y="70" width="300" height="220" fill="#14141c" stroke="#2a2a38" stroke-width="2"/>
+  <rect x="30" y="70" width="300" height="26" fill="#0d0d12"/>
+  <rect x="120" y="76" width="120" height="14" rx="2" fill="url(#oro)"/>
+  <rect x="130" y="81" width="100" height="4" rx="2" fill="#0d0d0d" opacity="0.55"/>
+
+  <!-- Toldo -->
+  <path d="M20 96 H340 L328 140 H32 Z" fill="#0d0d0d" stroke="#c5a059" stroke-width="2"/>
+  <g fill="#c5a059">
+    <path d="M32 140 L52 96 H72 L72 140 Z" opacity="0.9"/>
+    <path d="M112 96 H132 V140 H112 Z" opacity="0.9"/>
+    <path d="M172 96 H192 V140 H172 Z" opacity="0.9"/>
+    <path d="M232 96 H252 V140 H232 Z" opacity="0.9"/>
+    <path d="M292 96 H312 L328 140 H292 Z" opacity="0.9"/>
+  </g>
+  <path d="M32 140 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 q 14 14 28 0 H32 Z" fill="#c5a059"/>
+
+  <!-- Vidrieras -->
+  <rect x="50" y="170" width="95" height="90" fill="url(#vidriera)" stroke="#c5a059" stroke-width="3"/>
+  <rect x="215" y="170" width="95" height="90" fill="url(#vidriera)" stroke="#c5a059" stroke-width="3"/>
+  <circle cx="97" cy="215" r="60" fill="url(#brillo)"/>
+  <circle cx="262" cy="215" r="60" fill="url(#brillo)"/>
+
+  <!-- Relojes en las vidrieras -->
+  <g>
+    <rect x="86" y="190" width="22" height="14" fill="#0d0d0d"/>
+    <circle cx="97" cy="215" r="17" fill="#0d0d0d" stroke="#fff" stroke-width="2"/>
+    <circle cx="97" cy="215" r="13" fill="#1a1a24"/>
+    <path d="M97 215 V205 M97 215 L104 219" stroke="#e0b86c" stroke-width="2" stroke-linecap="round"/>
+    <rect x="86" y="228" width="22" height="14" fill="#0d0d0d"/>
+    <rect x="62" y="248" width="70" height="4" fill="#0d0d0d" opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="251" y="190" width="22" height="14" fill="#0d0d0d"/>
+    <circle cx="262" cy="215" r="17" fill="#0d0d0d" stroke="#fff" stroke-width="2"/>
+    <circle cx="262" cy="215" r="13" fill="#1a1a24"/>
+    <path d="M262 215 L268 209 M262 215 V226" stroke="#e0b86c" stroke-width="2" stroke-linecap="round"/>
+    <rect x="251" y="228" width="22" height="14" fill="#0d0d0d"/>
+    <rect x="227" y="248" width="70" height="4" fill="#0d0d0d" opacity="0.5"/>
+  </g>
+
+  <!-- Puerta -->
+  <rect x="152" y="165" width="56" height="125" fill="#0d0d0d" stroke="#c5a059" stroke-width="3"/>
+  <rect x="160" y="173" width="40" height="109" fill="#1a1a24" stroke="#8c6d2f" stroke-width="1.5"/>
+  <circle cx="196" cy="232" r="3" fill="#e0b86c"/>
+
+  <!-- Cinta de inauguración -->
+  <path d="M30 238 Q 90 230 152 236 L 208 236 Q 270 230 330 238 L 330 250 Q 270 242 208 248 L 152 248 Q 90 242 30 250 Z" fill="#c5a059" stroke="#8c6d2f" stroke-width="1"/>
+  <g transform="translate(180 242)">
+    <path d="M0 0 L-22 -14 L-22 14 Z" fill="#e0b86c" stroke="#8c6d2f" stroke-width="1.5"/>
+    <path d="M0 0 L22 -14 L22 14 Z" fill="#e0b86c" stroke="#8c6d2f" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="#c5a059" stroke="#8c6d2f" stroke-width="1.5"/>
+  </g>
+
+  <!-- Guirnalda de luces -->
+  <path d="M10 60 Q 90 100 180 62 Q 270 100 350 60" fill="none" stroke="#3a3a48" stroke-width="2"/>
+  <g fill="#f3d9a0">
+    <circle cx="40" cy="76" r="4"/>
+    <circle cx="80" cy="86" r="4"/>
+    <circle cx="125" cy="80" r="4"/>
+    <circle cx="180" cy="62" r="4"/>
+    <circle cx="235" cy="80" r="4"/>
+    <circle cx="280" cy="86" r="4"/>
+    <circle cx="320" cy="76" r="4"/>
+  </g>
+
+  <!-- Acera -->
+  <rect x="0" y="290" width="360" height="30" fill="#0d0d12"/>
+  <rect x="0" y="290" width="360" height="3" fill="#c5a059" opacity="0.6"/>
+</svg>
