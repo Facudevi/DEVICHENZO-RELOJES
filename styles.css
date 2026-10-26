@@ -1,13 +1,4 @@
-/* ==========================================================================
-   L'Heure Devis - Hoja de estilos
-   Metodología mobile first: los estilos base son para celulares y las
-   media queries del final los adaptan a tablets (768px) y PC (1024px).
-   ========================================================================== */
-
-
-/* ==========================================================================
-   1. VARIABLES
-   ========================================================================== */
+/*  VARIABLES  */
 :root {
     /* Colores principales */
     --color-accent: #c5a059;
@@ -35,7 +26,7 @@
     --font-body: 'Montserrat', sans-serif;
     --font-title: 'Cinzel', serif;
 
-    /* Tamaños de texto (se amplían en pantallas grandes) */
+    /* Tamaños de texto */
     --fs-small: 0.75rem;
     --fs-body: 0.9rem;
     --fs-section: 1.3rem;
@@ -61,9 +52,9 @@
 }
 
 
-/* ==========================================================================
-   2. BASE
-   ========================================================================== */
+
+
+/*  BASE  */
 * {
     margin: 0;
     padding: 0;
@@ -98,9 +89,9 @@ h3 {
 }
 
 
-/* ==========================================================================
-   3. HEADER Y NAVEGACIÓN
-   ========================================================================== */
+
+
+/*  HEADER Y NAVEGACIÓN  */
 header {
     width: 100%;
     max-width: var(--max-width);
@@ -188,9 +179,9 @@ header {
 }
 
 
-/* ==========================================================================
-   4. ESTRUCTURA GENERAL (main, títulos, navegación secundaria)
-   ========================================================================== */
+
+
+/*  ESTRUCTURA GENERAL (main, títulos, navegación secundaria)  */
 main {
     width: 100%;
     max-width: var(--max-width);
@@ -238,9 +229,9 @@ main {
 }
 
 
-/* ==========================================================================
-   5. COMPONENTES REUTILIZABLES
-   ========================================================================== */
+
+
+/*  COMPONENTES REUTILIZABLES  */
 
 /* Paneles con fondo y borde (secciones, tarjetas, formularios) */
 .hero,
@@ -289,7 +280,7 @@ main {
     max-width: 32rem;
 }
 
-/* Botones (misma base para todos) */
+/* Botones */
 .btn-detail,
 .btn-brand,
 .btn-add-cart,
@@ -435,7 +426,7 @@ input:focus-visible {
     text-transform: uppercase;
 }
 
-/* Grillas de tarjetas: 1 columna en celular */
+/* Grillas de tarjetas */
 .products-grid,
 .featured-grid,
 .latest-grid,
@@ -447,9 +438,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   6. INICIO
-   ========================================================================== */
+
+
+/*  INICIO  */
 .hero {
     display: flex;
     flex-direction: column;
@@ -527,9 +518,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   7. CATÁLOGO (categorías por marca)
-   ========================================================================== */
+
+
+/*  CATÁLOGO  */
 .brand-card {
     height: 8.5rem;
     display: flex;
@@ -568,9 +559,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   8. NOVEDADES
-   ========================================================================== */
+
+
+/*  NOVEDADES  */
 .hero-news {
     padding: var(--space-lg);
     display: flex;
@@ -636,9 +627,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   9. COLECCIONES
-   ========================================================================== */
+
+
+/*  COLECCIONES  */
 .collection-hero {
     padding: var(--space-lg);
     display: flex;
@@ -664,9 +655,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   10. PRODUCTO INDIVIDUAL
-   ========================================================================== */
+
+
+/*  PRODUCTO INDIVIDUAL  */
 .product-main-view {
     display: flex;
     flex-direction: column;
@@ -833,9 +824,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   11. COMPRA (formulario)
-   ========================================================================== */
+
+
+/*  COMPRA  */
 .checkout-layout {
     display: flex;
     flex-direction: column;
@@ -901,9 +892,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   12. FOOTER
-   ========================================================================== */
+
+
+/*  FOOTER  */
 .site-footer {
     width: 100%;
     max-width: var(--max-width);
@@ -954,9 +945,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   13. TABLETS (desde 768px)
-   ========================================================================== */
+
+
+/*  TABLETS (desde 768px)  */
 @media (min-width: 768px) {
     :root {
         --fs-section: 1.4rem;
@@ -1079,9 +1070,9 @@ input:focus-visible {
 }
 
 
-/* ==========================================================================
-   14. COMPUTADORAS (desde 1024px)
-   ========================================================================== */
+
+
+/*  COMPUTADORAS (desde 1024px)  */
 @media (min-width: 1024px) {
     /* Header en una sola fila con menú horizontal */
     header {
@@ -1126,17 +1117,5 @@ input:focus-visible {
 
     .spec-row {
         grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-
-/* ==========================================================================
-   15. ACCESIBILIDAD: respetar preferencia de menos movimiento
-   ========================================================================== */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
     }
 }
